@@ -1,5 +1,3 @@
 # Challenge
-The main objective of this study is to match partial street images
-with corresponding satellite images. The ResNet50 and ResNeXt50
-models are used to achieve the purpose of matching street images
-and satellite images by adjusting different hyperparameters.
+The main objective of this study is to match partial street images with corresponding satellite images. The ResNet50 and ResNeXt50 models are used to achieve the purpose of matching street images and satellite images by adjusting different hyperparameters.
+First, download the dataset University-1652 training set. Then, according to the actual situation, modify the utils.py and test-160k.py inside the original code to have the function of three-view training and testing. The model.py file was also modified to use the ResNeXt50 model. Finally, the model was trained on the 3 views (drone+satellite+street) and tested using the modified test-160k.py file to get the answer.txt file, and the results were submitted inside the system to get the recall score.
